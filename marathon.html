@@ -23,7 +23,7 @@
         
         h2 {
             color: limegreen;
-            text-shadow: 0 0 5px yellow;
+            text-shadow: 0 0 14px rgb(30, 255, 0);
         }
 
         /* Border for Images */
@@ -35,25 +35,7 @@
             width: 300px;
             height: 300px;
         }
-
-        /* Glowing Border for Buttons */
-        .mission-button {
-            background-color: #333;
-            color: lime;
-            font-size: 1.2em;
-            border: 2px solid magenta;
-            padding: 10px 20px;
-            margin: 15px;
-            cursor: pointer;
-            text-shadow: 0 0 5px yellow;
-            box-shadow: 0 0 15px cyan;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        
-        .mission-button:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 25px magenta;
-        }
+    
 
         /* Text Animation */
         .neon-text {
@@ -95,6 +77,20 @@
         box-shadow: 0 0 25px magenta;
     }
 
+    .pics {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+
+    .hot-pink {
+            color: hotpink;
+            font-size: 3em;
+            text-shadow: 0 0 10px hotpink;
+    }
+
     </style>
 </head>
 <body>
@@ -104,14 +100,20 @@
 
     <div>
         <h3>The Crew</h3>
-        <div disply="flex" flex-direction="row" style="padding: 20px">
-            <img src="img/runChris.jpeg" alt="Me" class="funny-image">
-            <img src="img/nathan.JPG" alt="Fatso" class="funny-image">
-            <img src="img/Erica.jpg" alt="She Does Speed" class="funny-image">
+        <div class="pics">
+            <div>
+                <img src="img/runChris.jpeg" alt="Me" class="funny-image">
+                <p>Chris: "Please Lorde let me Finish"</p>
+            </div>
+            <div>
+                <img src="img/nathan.JPG" alt="Fatso" class="funny-image">
+                <p>Nathan: "Getting Ready To PR!"</p>
+            </div>
+            <div>
+                <img src="img/Erica.jpg" alt="She Does Speed" class="funny-image">
+                <p>Erica: "Ever heard of Boston?"</p>
+            </div>
         </div>
-        <p>Erica: "Ever heard of Boston?"</p>
-        <p>Nathan: "Getting Ready To PR!"</p>
-        <p>Chris: "Please Lorde let me Finish"</p>
     </div>
 
     <h2>
@@ -154,7 +156,7 @@
     <p>We haven't drank (much) in many months. Meet us at the finish, we grab food! And Get Drinks!!</p>
     
 
-    <h3 class="neon-text">Coach</h3>
+    <h3 class="hot-pink">Coach</h3>
 
 
     <p> Shout out to Coach Annie - taking us on runs in circles. And Random long runs.</p>
