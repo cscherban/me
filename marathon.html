@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYC Marathon Quest</title>
+    <style>
+        /* Body Styling */
+        body {
+            background-color: black;
+            color: limegreen;
+            font-family: "Courier New", Courier, monospace;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Heading Styles */
+        h1 {
+            color: cyan;
+            font-size: 3em;
+            text-shadow: 0 0 10px magenta;
+        }
+        
+        h2 {
+            color: limegreen;
+            text-shadow: 0 0 5px yellow;
+        }
+
+        /* Border for Images */
+        .funny-image {
+            border: 2px solid cyan;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 0 0 10px magenta;
+            width: 300px;
+            height: 300px;
+        }
+
+        /* Glowing Border for Buttons */
+        .mission-button {
+            background-color: #333;
+            color: lime;
+            font-size: 1.2em;
+            border: 2px solid magenta;
+            padding: 10px 20px;
+            margin: 15px;
+            cursor: pointer;
+            text-shadow: 0 0 5px yellow;
+            box-shadow: 0 0 15px cyan;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .mission-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 25px magenta;
+        }
+
+        /* Text Animation */
+        .neon-text {
+            animation: flicker 1s infinite alternate;
+        }
+
+        /* Keyframes for Flicker Effect */
+        @keyframes flicker {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        /* Footer Styling */
+        footer {
+            color: #888;
+            font-size: 0.8em;
+            margin-top: 20px;
+        }
+
+    /* Store Button Styling */
+    .store-button {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 1.2em;
+        color: lime;
+        background-color: #333;
+        border: 2px solid magenta;
+        padding: 10px 20px;
+        margin: 15px;
+        cursor: pointer;
+        text-shadow: 0 0 5px yellow;
+        box-shadow: 0 0 15px cyan;
+        transition: transform 0.2s, box-shadow 0.2s;
+        display: inline-block;
+    }
+
+    .store-button:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 25px magenta;
+    }
+
+    </style>
+</head>
+<body>
+
+    <h1 class="neon-text">🚀 AQTC Takes The Marathon 🚀</h1>
+    <h2>Mission Objective: Conquer the 26.2 Miles</h2>
+
+    <div>
+        <h3>The Crew</h3>
+        <div disply="flex" flex-direction="row" style="padding: 20px">
+            <img src="img/runChris.jpeg" alt="Me" class="funny-image">
+            <img src="funny-image-2.jpg" alt="User's Hilarious Pic" class="funny-image">
+            <img src="funny-image-2.jpg" alt="User's Hilarious Pic" class="funny-image">
+        </div>
+        <p>Erica: "Ever heard of Boston?"</p>
+        <p>Nathan: "Getting Ready To PR!"</p>
+        <p>Chris: "Please Lorde let me Finish"</p>
+    </div>
+
+    <button class="mission-button" onclick="alert('Engage hyper-speed! See you at the finish line!')">BEGIN MISSION</button>
+
+    <h2>
+        How to Find Us! 🚀
+    </h2>
+
+    <p>
+        We'll all be starting at 9:45 on Verazzano Bridge. But, we have different target times and slightly different routes (in Brooklyn)
+
+        Chris is going for a 4 hour finish, while Erica and Nathan are aiming for ~3:30, so y'all will have to be Patient with Me!
+    </p>
+
+    <ul>Bib Numbers: 
+        <li>Chris: 16108</li>
+        <li>Erica: </li>
+        <li>Nathan: </li>
+    </ul>
+
+    <p>
+       Download the New York City Marathon App and you can see us live using our Bib Numbers!
+    </p>
+
+    <a href="https://play.google.com/store/apps/details?id=YOUR_APP_ID" target="_blank">
+        <button class="store-button play-store">
+            🚀 Get it on Google Play
+        </button>
+    </a>
+    
+    <!-- Apple App Store Button -->
+    <a href="https://apps.apple.com/us/app/6680190121" target="_blank">
+        <button class="store-button app-store">
+            🍎 Download on the App Store
+        </button>
+    </a>
+    
+
+    <h1 class="neon-text">After Party</h1>
+
+    <p>HEHEHEHHEH HEHEHEHEHEH</p>
+    <p>We haven't drank (much) in many months. Meet us at the finish, we grab food! And Get Drinks!!</p>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Galaxy Quest NYC Marathon Crew</p>
+        <p>Never give up, never surrender! (unless it really hurts)</p>
+    </footer>
+
+</body>
+</html>
